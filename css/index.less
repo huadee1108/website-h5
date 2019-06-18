@@ -1,0 +1,76 @@
+@color: white;
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: @color;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.9;
+  z-index: 1000;
+  background: #6B7792;
+  color: @color;
+  font-size: 0.35rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.close {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  color: @color;
+}
+.line {
+  width: 0.75rem;
+  height: 0.05rem;
+  background: @color;
+}
+.line-length {
+  width: 1.45rem;
+}
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background: @color;
+}
+.dis {
+  color: @color;
+}
+header{
+  padding: 0.2rem 0.3rem;
+}
+.logo-left {
+  width: 1.8rem;
+}
+.logo-right {
+  float: right;
+}
+.tip {
+  text-align: center;
+  padding: 0 0.8rem;
+  margin-top: 2rem;
+  h1 {
+    font-size: 0.5rem;
+  }
+  p {
+    margin-top: 0.5rem;
+    font-size: 0.30rem;
+    margin-bottom: 0.5rem;
+  }
+  span {
+    font-size: 0.28rem;
+  }
+}
