@@ -1,14 +1,37 @@
 $('.top').hide();
 
-var swiper = new Swiper('.swiper-container', {
-  direction: 'vertical'
+var swiper_v = new Swiper('#swiper1', {
+  direction: 'vertical',
+  hashNavigation: true,
+});
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  watchSlidesVisibility: true,
+});
+var galleryBottom = new Swiper('.gallery-bottom', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
+var galleryThumbs = new Swiper('.gallery-thumbs1', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  watchSlidesVisibility: true,
+});
+var galleryBottom = new Swiper('.gallery-bottom1', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: galleryThumbs
+  }
 });
 
 $('.logo-right').click(function() {
  $('.top').show();
 });
 
-$('.close').click(function() {
+$('.close1').click(function() {
   $('.top').hide();
 });
 
@@ -28,5 +51,7 @@ function changeStatus(num) {
     }
   })
   $('.top').hide();
-  document.getElementById('to'+num).scrollIntoView();
+  // document.getElementById('to'+num).scrollIntoView();
+  console.log(window.location.href + '#slide' + num);
+  window.location.href = window.location.href + '#slide' + num;
 }

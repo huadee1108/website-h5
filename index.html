@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Swiper demo</title>
+  <title>金不换</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <script src="./js/rem.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/swiper.min.css">
-  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/index.css">
 
 </head>
 <body>
   <!-- Swiper -->
   <div class="top">
-    <div class="close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+    <div class="close1"><span class="glyphicon glyphicon-remove"></span></div>
     <div id="1" onclick="changeStatus(1)">
       首页
       <div class="line"></div>
@@ -41,9 +40,9 @@
       <div class="line line-length"></div>
     </div>
   </div>
-  <div class="swiper-container">
-    <div id="to1" class="swiper-wrapper">
-      <div class="swiper-slide" style="background: url(../images/bg.png) no-repeat;-webkit-background-size: 100% 100%;
+  <div id="swiper1" class="swiper-container">
+    <div class="swiper-wrapper">
+      <div id="to1" data-hash="slide1" class="swiper-slide" style="background: url(../images/bg.png) no-repeat;-webkit-background-size: 100% 100%;
         background-size: 100% 100%;">
         <div class="dis">
           <header>
@@ -51,7 +50,7 @@
             <div class="logo-right"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
           </header>
           <div class="tip">
-            <h1 class="title">金不换集团</h1>
+            <h1>金不换集团</h1>
             <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不</p>
             <span>了解更多 <span class="glyphicon glyphicon-triangle-right"></span></span>
             <br><br><br>
@@ -59,11 +58,247 @@
           </div>
         </div>
       </div>
-      <div id="to2" class="swiper-slide">Slide 2</div>
-      <div id="to3" class="swiper-slide">Slide 3</div>
-      <div id="to4" class="swiper-slide">Slide 4</div>
-      <div id="to5" class="swiper-slide">Slide 5</div>
-      <div id="to6" class="swiper-slide">Slide 6</div>
+      <div id="to2" data-hash="slide2" class="swiper-slide">
+        <header>
+          <img class="logo-left" src="./images/logob.png">
+          <div class="logo-right"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
+        </header>
+        <div class="intro">
+          <img src="./images/introduce@2x.png" alt="">
+          <div class="title">
+            关于金不换集团
+          </div>
+        </div>
+        <div class="intro-all">
+          <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+             金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+          </p>
+        </div>
+      </div>
+      <div id="to3" data-hash="slide3" class="swiper-slide">
+        <header>
+            <img class="logo-left" src="./images/logob.png">
+            <div class="logo-right"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
+        </header>
+        <div class="produce">
+          <div class="pro">我们的产品</div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+            </div>
+          </div>
+          <div class="swiper-container gallery-bottom">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="to4" data-hash="slide4" class="swiper-slide">
+        <header>
+          <img class="logo-left" src="./images/logob.png">
+          <div class="logo-right"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
+        </header>
+        <div class="depart">
+          <div class="dep">发展历程</div>
+          <div class="swiper-container gallery-thumbs1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+              <div class="swiper-slide">注册商标</div>
+            </div>
+          </div>
+          <div class="swiper-container gallery-bottom1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+              <div class="swiper-slide">
+                <h4>注册商标</h4>
+                <p>金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+                  金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不换金不
+               </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="to5" data-hash="slide5" class="swiper-slide">
+        <header>
+          <img class="logo-left" src="./images/logob.png">
+          <div class="logo-right"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
+        </header>
+        <div class="join">
+          <div class="join_title">加入我们</div>
+          <div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">姓名</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="请输入">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">联系电话</label>
+              <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="请输入">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">所在省份</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">所在城市</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+              </select>
+            </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">岗位选择</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">提交</button>
+          </div>
+        </div>         
+      </div>
+      <div id="to6" data-hash="slide6" class="swiper-slide">
+        <header>
+            <img class="logo-left" src="./images/logob.png">
+            <div class="logo-right"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
+        </header>
+        <div class="coope">
+          <h3>商务合作</h3>
+          <div>
+            <h5>广州金不换总公司</h5>
+            <p>dfdfdfdfd@jbh.com</p>
+            <a href="">dfdfasgfhflk;jhlf</a>
+          </div>
+        </div>   
+      </div>
     </div>
   </div>
 

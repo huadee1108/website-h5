@@ -14,7 +14,7 @@ body {
   height: 100%;
   position: absolute;
   opacity: 0.9;
-  z-index: 1000;
+  z-index: 100;
   background: #6B7792;
   color: @color;
   font-size: 0.35rem;
@@ -24,11 +24,11 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.close {
-  position: absolute;
+.close1 {
+  position: fixed;
   top: 0.2rem;
   right: 0.2rem;
-  color: @color;
+  color: white;
 }
 .line {
   width: 0.75rem;
@@ -39,18 +39,21 @@ body {
   width: 1.45rem;
 }
 .swiper-container {
-  position: relative;
   width: 100%;
+  position: relative;
+}
+#swiper1 {
   height: 100%;
 }
 .swiper-slide {
-  background: @color;
+  // background: @color;
 }
 .dis {
   color: @color;
 }
 header{
   padding: 0.2rem 0.3rem;
+  height: 0.85rem;
 }
 .logo-left {
   width: 1.8rem;
@@ -73,4 +76,122 @@ header{
   span {
     font-size: 0.28rem;
   }
+}
+.intro {
+  width: 100%;
+  position: relative;
+  img {
+    position: relative;
+    width: 100%;
+    height: 5.6rem;
+  }
+  .title {
+    position: absolute;
+    width: 50%;
+    height: 1.5rem;
+    bottom: 0;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    background: white;
+  }
+}
+.intro-all {
+  padding: 0.5rem 0.5rem;
+}
+.produce {
+  width: 100%;
+  height: 10.2rem;
+  overflow: hidden;
+  background: url(../images/produce@2x.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; 
+  .pro {
+    color: white;
+    font-size: 0.52rem;
+    font-weight: bold;
+    padding: 0.4rem;
+  } 
+}
+.gallery-bottom {
+  width: 90%;
+  margin: 0.1rem auto;
+  padding-top: 0.7rem;
+  height: 5.5rem;
+  color: white;
+}
+.gallery-thumbs {
+  color: white;
+  width: 90%;
+  margin: 1rem auto 0.1rem auto;
+  height: 0.7rem;
+  font-size: 0.3rem;
+  border-bottom: solid 0.03rem rgb(241, 233, 218);
+}
+.gallery-thumbs .swiper-slide {
+  width: 1rem;
+  height: 100%;
+  line-height: 0.7rem;
+  opacity: 0.6;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  font-size: 0.35rem;
+  line-height: 0.6rem;
+}
+.gallery-bottom1 {
+  width: 90%;
+  margin: 0.1rem auto;
+  padding-top: 0.7rem;
+  height: 5.5rem;
+}
+.gallery-thumbs1 {
+  width: 90%;
+  margin: 1rem auto 0.1rem auto;
+  height: 0.7rem;
+  font-size: 0.3rem;
+  border-bottom: solid 0.03rem rgb(34, 30, 24);
+}
+.gallery-thumbs1 .swiper-slide {
+  width: 1.2rem;
+  height: 100%;
+  line-height: 0.7rem;
+  opacity: 0.6;
+}
+.gallery-thumbs1 .swiper-slide-thumb-active {
+  opacity: 1;
+  font-size: 0.35rem;
+  line-height: 0.6rem;
+}
+.depart {
+  width: 100%;
+  height: 10.2rem;
+  overflow: hidden;
+  background: url(../images/deparment@2x.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; 
+  .dep {
+    font-size: 0.52rem;
+    font-weight: bold;
+    padding: 0.6rem;
+  } 
+}
+// .swiper-container-h {
+//   width: 100%;
+//   height: 6rem;
+// }
+.swiper-pro {
+  padding: 0.6rem;
+  color: white;
+}
+.join {
+  padding: 0.1rem 0.5rem;
+  .join_title {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.coope {
+  padding: 0.4rem;
 }
